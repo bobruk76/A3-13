@@ -23,21 +23,24 @@ h1{
     text-transform: uppercase;
 }
 
-
 p{
     line-height: 170%;
 }
+
 a{
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
 }
 
-.text-input{
+.text-input,
+.form-field{
     font-size: 1.08rem;
     letter-spacing: -0.04rem
 }
-.text-input::placeholder{
+
+.text-input::placeholder,
+.form-field::placeholder{
     font-size: 1.08rem;
     letter-spacing: -0.04rem;
     padding-left: 3.3rem;
@@ -156,8 +159,10 @@ nav > ul > li{
 }
 
 .button:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+    color: #FF2D2D;
 }
+
 .button:hover a{
     color: #FF2D2D;
 }
@@ -416,6 +421,10 @@ nav > ul > li{
 .sixth-section .form-field{
     margin-bottom: 3rem;
     background-color: #E6E6E6;
+
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
 }
 
 .form-field p{

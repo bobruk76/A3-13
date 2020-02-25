@@ -185,7 +185,7 @@
             Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.
         </p>
 
-        <form  class="second-block" action="" method="GET">
+        <form  id="second-block" class="second-block" action="" method="GET">
             <input id="email" class="text-input" type="email" name="email" required  placeholder="Email Address...">
             <button class="button" type="submit">subscribe</button>
         </form>
@@ -201,20 +201,14 @@
             </p>
             <div class="like-hr"></div>
         <div class="second-block">
-            <div class="like-form">
-                <div class="form-field">
-                    <p>Name</p>
-                </div>
-                <div class="form-field">
-                    <p>Your Mail</p>
-                </div>
+            <form class="like-form" action="" method="GET">
+                <input id="name"  class="form-field" type="text" name="name" required  placeholder="Name">
+                <input id="you-email"  class="form-field" type="email" name="you-email" required  placeholder="Your Mail">
                 <div class="form-field">
                     <p>Type your message</p>
                 </div>
-                <div class="button">
-                    <a href="#">Send message</a>
-                </div>
-            </div>
+                <button class="button" type="submit">subscribe</button>
+        </form>
 
             <div class="like-contact">
                 <h2>contact info</h2>
