@@ -33,6 +33,16 @@ a{
     font-weight: 700;
 }
 
+.text-input{
+    font-size: 1.08rem;
+    letter-spacing: -0.04rem
+}
+.text-input::placeholder{
+    font-size: 1.08rem;
+    letter-spacing: -0.04rem;
+    padding-left: 3.3rem;
+}
+
 .content{
     /* width: 80vw; */
     display: flex;
@@ -105,7 +115,6 @@ nav > ul > li{
     flex-direction:column;
 }
 
-
 .main-content > .colum:nth-child(1){
     align-items: flex-start;
     padding-right: calc(100vw/20);
@@ -137,14 +146,17 @@ nav > ul > li{
     background-color: rgb(255, 45, 45);
     border: 2px solid #FF0000;
     border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 1.27rem;
 }
+
 .button a{
     color: rgb(255, 255, 255);
-    font-size: 19px;
+    font-size: 1.27rem;
 }
 
 .button:hover{
-    background: rgba(0, 0, 0, 0.0001);
+    background: rgba(255, 255, 255, 0.5);
 }
 .button:hover a{
     color: #FF2D2D;
@@ -324,6 +336,7 @@ nav > ul > li{
 }
 
 /*fifth section*/
+
 .fifth-section, .like-contact{
     display: flex;
     flex-direction: column;
@@ -644,7 +657,7 @@ footer{
     .site-menu ul{
         margin-left: -2.6rem;
     }
-    
+
     .site-menu li a{
         margin-top: 0.8rem;
     }
