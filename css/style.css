@@ -446,6 +446,8 @@ nav > ul > li{
     margin-top: 0rem;
     height: 64px;
     width: 100%;
+
+    text-transform: uppercase;
 }
 
 .like-contact{
