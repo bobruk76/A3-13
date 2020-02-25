@@ -245,7 +245,6 @@ nav > ul > li{
 }
 
 /*fourth section*/
-
 .fourth-section {
     flex: 0 0 auto;
     flex-direction: column;
@@ -294,7 +293,6 @@ nav > ul > li{
     visibility: hidden;
 }
 
-
 .fourth-section-rectangle:hover > h3{
     visibility: visible;
 }
@@ -341,7 +339,6 @@ nav > ul > li{
 }
 
 /*fifth section*/
-
 .fifth-section, .like-contact{
     display: flex;
     flex-direction: column;
@@ -442,11 +439,9 @@ nav > ul > li{
 .form-field:nth-child(3){
     width: 100%;
     height: 15.5rem;
+    padding-top: 1.5rem;
 }
 
-.form-field:nth-child(3) p{
-    margin-top: 1.5rem;
-}
 .sixth-section .button{
     margin-top: 0rem;
     height: 64px;
