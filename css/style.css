@@ -250,14 +250,46 @@ nav > ul > li{
 }
 
 .fourth-section-rectangle{
+    flex: 0 1 20%;
+
+    position: relative;
+
     background-color: #FF3F40;
-    width: 20%;
+    min-height: 214px;
+}
+
+.fourth-section-rectangle > h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    text-align: center;
+    background-color: #802021;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    opacity: 0.8;
+
+    visibility: hidden;
+}
+
+
+.fourth-section-rectangle:hover > h3{
+    visibility: visible;
+}
+
+.fourth-section-rectangle > img{
+    width: 197px;
     height: 214px;
 }
 
 .fourth-section-rectangle-alone{
+    flex: 0 1 322px;
     background-color: #FF3F40;
-    min-width: 322px;
     height: 460px;
     margin-left: 0.6rem;
     margin-right: 4.5rem;
@@ -284,39 +316,11 @@ nav > ul > li{
     margin-right: 2.4rem;
 
     color: #000000;
-  
+
     text-transform: none;
     font-size: 1.1rem;
     font-style: italic;
-    font-weight: 600;  
-}
-
-.fourth-section-rectangle{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: stretch;
-   
-}
-
-.fourth-section-rectangle h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 20%;
-    padding-left: 0.8rem;
-
-    text-align: center;
-    background-color: #802021;
-    color: #FFFFFF;
-    text-transform: uppercase;
-
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 400; 
-    letter-spacing: 0.04rem;
-
+    font-weight: 600;
 }
 
 /*fifth section*/
@@ -702,7 +706,7 @@ footer{
     .sixth-section .like-form{
         width: 52%;
     }
-    
+
     .sixth-section .like-contact{
         width: 41%;
         margin-top: 0px;
