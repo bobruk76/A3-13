@@ -124,10 +124,7 @@ nav > ul > li{
     padding-right: calc(100vw/20);
 }
 
-.main-content > .colum:nth-child(2n+2){
-    flex-direction: row;
-    justify-content: flex-end;
-}
+
 .general-h1{
     font-weight: 800;
     text-transform: uppercase;
@@ -169,6 +166,7 @@ nav > ul > li{
 }
 
 .player{
+    flex: 1 1 100%;
     padding-top: 15px;
     max-width: 555px;
     max-height: 355px;;
@@ -212,7 +210,7 @@ nav > ul > li{
     margin: 28px auto 33px;
 }
 
-.like-hr {
+.like-hr{
     background-color:  #FF2D2D;
     width: 135px;
     height: 2px;
@@ -247,7 +245,7 @@ nav > ul > li{
 
 /*fourth section*/
 .fourth-section {
-    flex: 0 0 auto;
+/*     flex: 0 0 auto; */
     flex-direction: column;
 }
 
@@ -267,12 +265,14 @@ nav > ul > li{
 }
 
 .fourth-section-rectangle{
-    flex: 0 1 20%;
+    flex: 0 1 24%;
 
     position: relative;
 
     background-color: #FF3F40;
-    min-height: 214px;
+
+    max-width: 197px;
+    max-height: 214px;
 }
 
 .fourth-section-rectangle > h3{
@@ -299,16 +299,22 @@ nav > ul > li{
 }
 
 .fourth-section-rectangle > img{
-    width: 197px;
-    height: 214px;
+    width: 100%;
 }
 
 .fourth-section-rectangle-alone{
     flex: 0 1 322px;
+
+    display: flex;
     background-color: #FF3F40;
     height: 460px;
     margin-left: 0.6rem;
     margin-right: 4.5rem;
+}
+
+.fourth-section-rectangle-alone > *{
+    width: 100%;
+    align-content: center;
 }
 
 .fourth-section .like-hr{
@@ -337,6 +343,9 @@ nav > ul > li{
     font-size: 1.1rem;
     font-style: italic;
     font-weight: 600;
+}
+.fourth-menu li a:hover{
+    color: #FF2D2D;
 }
 
 /*fifth section*/
@@ -501,6 +510,10 @@ footer{
 /*media section*/
 @media (min-width: 350px){
 
+    .main-content > .colum{
+        align-items: center;
+    }
+
     p{
         padding: initial;
     }
@@ -555,10 +568,6 @@ footer{
         margin-bottom: 3rem;
     }
 
-    .fourth-section-rectangle-alone{
-        width: 10vw;
-    }
-
     .fourth-section .second-block{
         flex-direction: column;
     }
@@ -574,7 +583,7 @@ footer{
     .fifth-section{
         padding-bottom: 8.5rem;
     }
-    
+
     .fifth-section .second-block {
         display: flex;
         flex-wrap: wrap;
@@ -619,18 +628,14 @@ footer{
 
      .sixth-section .second-block > *{
         width: 100%;
-    } 
+    }
 
     .sixth-section .like-form{
         justify-content: space-between;
     }
-} 
+}
 
 @media (min-width: 576px){
-    .main-content,.second-section{
-        flex-direction: column;
-    }
-
     .general-h1{
         font-size: 2rem;
         letter-spacing: 0.3rem;
@@ -642,13 +647,8 @@ footer{
 }
 
 @media (min-width:768px){
-    .main-content,.second-section {
-        flex-direction: column;
-    }
-
     g.general-h1{
         font-size: 3rem;
-        letter-spacing: 0.3rem;
     }
     .second-rectangle{
         max-width:48%;
@@ -664,15 +664,21 @@ footer{
     .site-menu ul{
         margin-left: -2.6rem;
     }
-
     .site-menu li a{
         margin-top: 0.8rem;
     }
     .main-content,.second-section,
-    .sixth-section .second-block {
+
+    .sixth-section .second-block,
+    .fourth-section .second-block {
         flex-direction: row;
     }
 
+    .main-content > .colum:nth-child(2n+2){
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
     .colum{
         width: 40vw;
     }
@@ -690,10 +696,6 @@ footer{
 
     .second-section{
         margin-top: 153px;
-    }
-
-    .fourth-section .second-block{
-        flex-direction: row;
     }
 
     .fifth-section .second-block {
@@ -739,6 +741,7 @@ footer{
 }
 
 @media (min-width:1200px){
+
     .main-content,.second-section{
         justify-content: start;
     }
@@ -810,15 +813,16 @@ footer{
         margin: 1.24rem 10rem 2.7rem 0;
     }
 
-    @media (min-width:1300px){
-        .general-h1{
-            font-size: 3.8rem;
-        }
-    }
+}
 
-    @media (min-width:1500px){
-        .fourth-section-rectangle{
-            width: 196px;
-        }
+@media (min-width:1300px){
+    .general-h1{
+        font-size: 3.8rem;
+    }
+}
+
+@media (min-width:1500px){
+    .fourth-section-rectangle{
+        width: 196px;
     }
 }
