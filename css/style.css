@@ -51,8 +51,8 @@ a{
     display: flex;
     justify-content: center;
 }
+
 .wrapper-first-page{
-    flex: 1 0 auto;
     background: rgb(246, 242, 242);
 }
 
@@ -66,6 +66,7 @@ header:first-of-type{
     font-size: 14px;
     background: rgba(0, 0, 0, 0.8);
 }
+
 .site-menu{
     width: 37.31%;
 }
@@ -812,12 +813,12 @@ footer{
     @media (min-width:1300px){
         .general-h1{
             font-size: 3.8rem;
-        }  
+        }
     }
 
     @media (min-width:1500px){
         .fourth-section-rectangle{
             width: 196px;
-        }        
+        }
     }
 }
